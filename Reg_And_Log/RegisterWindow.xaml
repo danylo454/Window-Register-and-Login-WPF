@@ -1,0 +1,40 @@
+﻿<Window x:Class="Reg_And_Log.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reg_And_Log"
+        mc:Ignorable="d"
+        Background="#000"
+        WindowStartupLocation="CenterScreen"
+        Title="RegisterWindow" Height="550" Width="400">
+    <Grid x:Name="reg" Background="#000" Margin="20,20,20,20">
+        <StackPanel x:Name="registerStackPanel">
+            <Label Foreground="White" Content="Register" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+            <Grid Margin="0,20,0,20" >
+                <Label Foreground="White" Content="Name" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                <TextBox TextChanged="nameTextBox_TextChanged" x:Name="nameTextBox" ToolTip="Enter Name" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
+            </Grid>
+            <Grid Margin="0,20,0,20" >
+                <Label Foreground="White" Content="Surname" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                <TextBox TextChanged="nameTextBox_TextChanged" x:Name="surnameTextBox" ToolTip="Enter Surname" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
+            </Grid>
+            <Grid Margin="0,20,0,20" >
+                <Label Foreground="White" Content="Login" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                <TextBox TextChanged="nameTextBox_TextChanged" ToolTip="Enter Login" x:Name="loginTextBox" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
+            </Grid>
+            <Grid Margin="0,20,0,20" >
+                <Label Foreground="White" Content="Password" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                <TextBox TextChanged="nameTextBox_TextChanged" ToolTip="Enter Password" x:Name="passwdTextBox" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
+            </Grid>
+            <Grid Margin="0,20,0,20" >
+                <Label Foreground="White" Content="Password" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold"/>
+                <TextBox TextChanged="nameTextBox_TextChanged" ToolTip="Enter Password" x:Name="repitPasTextBox" HorizontalAlignment="Right" Width="250" FontWeight="Bold"/>
+            </Grid>
+            <Grid>
+                <Button Click="canselBtm_Click" x:Name="canselBtm" HorizontalAlignment="Left" Margin="20,0,0,-0.5" Content="Cansel" FontSize="25" FontWeight="Bold" Height="38" VerticalAlignment="Top"/>
+                <Button Click="registerBtm_Click" x:Name="registerBtm" Content="Register" Margin="0,0,20,-0.5" HorizontalAlignment="Right" FontSize="25" FontWeight="Bold" Height="38" VerticalAlignment="Top"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
